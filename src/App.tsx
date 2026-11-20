@@ -38,7 +38,6 @@ function App() {
           <div className="circle" role="group" aria-label="Хроматический круг из 12 нот">
             <svg className="circle-art" viewBox="0 0 420 420" aria-hidden="true">
               <circle cx={CENTER} cy={CENTER} r="181" className="outer-ring" />
-              <circle cx={CENTER} cy={CENTER} r="128" className="inner-ring" />
               {connectorPath && <polyline points={connectorPath} className="chord-connectors" />}
               <circle cx={CENTER} cy={CENTER} r="60" className="center-disc" />
               <text x={CENTER} y="205" className="center-name">{chord.symbol}</text>
